@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - floor
+  - Floor
   layers:
   - Default
   - TransparentFX
@@ -40,6 +42,18 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: game_hikei
+    uniqueID: 405722775
+    locked: 0
+  - name: water
+    uniqueID: 1929371685
+    locked: 0
+  - name: chara
+    uniqueID: 3915442363
+    locked: 0
+  - name: jimen
+    uniqueID: 962119633
     locked: 0
   - name: hikei
     uniqueID: 1803250227

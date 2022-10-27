@@ -31,4 +31,5 @@ public class CharaControl : MonoBehaviour
         transform.position = position;
 
     }
+
 }

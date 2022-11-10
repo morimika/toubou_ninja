@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Over : MonoBehaviour
+public class gameover : MonoBehaviour
 {
-
 
     // Start is called before the first frame update
     void Start()
@@ -18,11 +17,11 @@ public class Over : MonoBehaviour
         
     }
 
-    void OnCollisionEnter(Collision collision)
-    {
-        if(other.gameObject.CompareTag("gameover"))
+    void OnCollisionEnter(Collision other)
+    {   
+        if(other.gameObject.tag=="Player")
         {
-            Application.LoadLevel("gameover");
+
         }
     }
 }

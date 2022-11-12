@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class gameover : MonoBehaviour
 {
@@ -17,11 +18,16 @@ public class gameover : MonoBehaviour
         
     }
 
-    void OnCollisionEnter(Collision other)
+    void OnTriggerEnter2D(Collider2D other)
     {   
-        if(other.gameObject.tag=="Player")
+        if(other.gameObject.tag=="gameover")
         {
-
+            FadeManager.Instance.LoadScene("start", 1.0f);
         }
+
+        //if(other.gameObject.tag=="clear")
+        //{
+        //    Invoke(FadeManager.Instance.LoadScene("Last", 1.0f),3.0f);
+        //}
     }
 }

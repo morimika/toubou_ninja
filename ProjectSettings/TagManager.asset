@@ -63,6 +63,9 @@ TagManager:
   - name: jimen
     uniqueID: 962119633
     locked: 0
+  - name: whiteout
+    uniqueID: 3977130401
+    locked: 0
   - name: hikei
     uniqueID: 1803250227
     locked: 0

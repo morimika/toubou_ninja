@@ -26,7 +26,7 @@ public class jump : MonoBehaviour
         if(other.gameObject.tag=="clear")
         {
             isClear = true;
-            Invoke(nameof(Last_change), 1.0f);
+            Invoke(nameof(Last_change),4.0f);
         }
     }
 
@@ -38,6 +38,7 @@ public class jump : MonoBehaviour
             this.rbody2D.AddForce(transform.up * jumpForce);
             jumpCount++;
         }
+
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -53,4 +54,5 @@ public class jump : MonoBehaviour
         //FadeManager.Instance.LoadScene("start", 1.0f);
         SceneManager.LoadScene("Last");
     }
+
 }

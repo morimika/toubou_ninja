@@ -16,7 +16,7 @@ public class water_se : MonoBehaviour
 
     void Update()
     {
-        // 左
+        // スペースキー
         if (Input.GetKeyUp(KeyCode.Space))
         {
             //音(sound1)を鳴らす

@@ -8,18 +8,8 @@ public class change_start : MonoBehaviour
     //‰æ–Ê‘JˆÚ
     public void OnClick()
         {
-            SceneManager.LoadScene("Game");
+            SceneManager.LoadScene("SampleScene");
         }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

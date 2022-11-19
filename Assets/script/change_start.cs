@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class change_start : MonoBehaviour
 {
-    //‰æ–Ê‘JˆÚ
+    //ƒ{ƒ^ƒ“‰Ÿ‚µ‚½‚ç‰æ–Ê‘JˆÚ
     public void OnClick()
         {
             SceneManager.LoadScene("SampleScene");

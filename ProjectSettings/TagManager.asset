@@ -8,6 +8,7 @@ TagManager:
   - Floor
   - gameover
   - clear
+  - Ground
   layers:
   - Default
   - TransparentFX
@@ -51,20 +52,20 @@ TagManager:
   - name: last_title
     uniqueID: 392976023
     locked: 0
-  - name: game_hikei
-    uniqueID: 405722775
-    locked: 0
   - name: water
     uniqueID: 1929371685
+    locked: 0
+  - name: game_hikei
+    uniqueID: 405722775
     locked: 0
   - name: chara
     uniqueID: 3915442363
     locked: 0
+  - name: deco
+    uniqueID: 2811395331
+    locked: 0
   - name: jimen
     uniqueID: 962119633
-    locked: 0
-  - name: whiteout
-    uniqueID: 3977130401
     locked: 0
   - name: hikei
     uniqueID: 1803250227

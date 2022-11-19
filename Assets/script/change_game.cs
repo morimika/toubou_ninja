@@ -8,6 +8,7 @@ public class change_game : MonoBehaviour
 
     private Rigidbody2D rbody2D;
 
+    //söŒë‚ÌÕ@boolŒ^
     private bool isFloor;
 
     // Start is called before the first frame update
@@ -22,8 +23,11 @@ public class change_game : MonoBehaviour
     {
 
     }
+
+    //•¨‚É‚Ó‚ê‚½‚Ì”»’è
     private void OnCollisionEnter2D(Collision2D other)
     {
+        //Floorƒ^ƒO‚É‚Ó‚ê‚½
         if (other.gameObject.CompareTag("Floor"))
         {
             Continew();
@@ -33,6 +37,7 @@ public class change_game : MonoBehaviour
     //‰æ–Ê‘JˆÚ
     public void Continew()
     {
+        //Game‚É‰æ–Ê‘JˆÚ
         SceneManager.LoadScene("Game");
     }
 }

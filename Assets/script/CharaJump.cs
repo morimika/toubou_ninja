@@ -1,3 +1,5 @@
+//水蜘蛛で使用
+
 
 using System.Collections;
 using System.Collections.Generic;
@@ -8,10 +10,12 @@ public class CharaJump : MonoBehaviour
 {
     private Rigidbody2D rbody2D;
 
+    //ジャンプ力
     private float jumpForce = 150f;
 
     private int jumpCount = 0;
 
+    //右に移動する大きさ
     private float speed = 0.3f;
 
 
@@ -26,6 +30,9 @@ public class CharaJump : MonoBehaviour
     {
         Vector2 position = transform.position;
 
+        //スペースを押すとジャンプし右に移動
+        //コメントアウトは保険
+        //スペースを”離した時”に設定することで長押しで飛べないようにした
         if (Input.GetKeyUp(KeyCode.Space)/*&&this.jumpCount<1*/)
         {
             this.rbody2D.AddForce(transform.up * jumpForce);
@@ -35,6 +42,8 @@ public class CharaJump : MonoBehaviour
         transform.position = position;
     }
 
+    //フロアにふれた時　保険
+    //jumpCountが動かないので効果はない
     private void OnCollisionEnter2D(Collision2D other)
     {
         if(other.gameObject.CompareTag("Floor"))
@@ -43,10 +52,14 @@ public class CharaJump : MonoBehaviour
         }
     }
 
+
+    //トリガーに設定したClearにふれた時
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "clear")
         {
+            //このスクリプトを無効化する
+            //ゴール後操作できない
             enabled = false;
 
         }

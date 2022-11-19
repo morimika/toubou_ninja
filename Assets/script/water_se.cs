@@ -16,11 +16,13 @@ public class water_se : MonoBehaviour
 
     void Update()
     {
-        // スペースキー
+        // スペースキーを離した時
         if (Input.GetKeyUp(KeyCode.Space))
         {
-            //音(sound1)を鳴らす
+            //SEを鳴らす
             audioSource.PlayOneShot(sound1);
         }
     }
+
+    //連打することでマシンガンのような音になってしまう
 }

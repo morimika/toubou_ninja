@@ -7,11 +7,14 @@ public class PlayerJamp : MonoBehaviour
 {
 
     //ïœêîíËã`
-    public float flap = 100000f;
-    public float scroll = 5f;
+    public float flap = 100f;
+    public float scroll = 10f;
     float direction = 0f;
     Rigidbody2D rb2d;
     bool jump = false;
+
+    public SpriteRenderer spriteRenderer;
+    public Sprite sprite;
 
     // Use this for initialization
     void Start()
@@ -29,10 +32,12 @@ public class PlayerJamp : MonoBehaviour
         if (Input.GetKey(KeyCode.RightArrow))
         {
             direction = 1f;
+            spriteRenderer.sprite = sprite;
         }
         else if (Input.GetKey(KeyCode.LeftArrow))
         {
             direction = -1f;
+            spriteRenderer.sprite = sprite;
         }
         else
         {
